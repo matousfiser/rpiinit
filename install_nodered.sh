@@ -15,17 +15,14 @@ sudo apt-get install -y build-essential
 sudo npm install -g --unsafe-perm node-red
 
 # Vytvoření adresáře pro Node-RED
-mkdir -p ~/.node-red
-cd ~/.node-red
+mkdir -p /home/matty/.node-red
+cd /home/matty/.node-red
 
 # Instalace příslušných knihoven
 npm install node-red-node-mysql
 npm install node-red-node-email
-npm install node-red-contrib-iiot
 npm install node-red-contrib-mcp23017
-npm install node-red-contrib-ncd-comm
 npm install node-red-contrib-owfs
-npm install node-red-node-pi-dht22
 npm install node-red-node-pi-gpio
 
 # Instalace OWFS
@@ -35,7 +32,7 @@ sudo apt-get install -y owfs ow-shell owserver
 echo 'server: usb = all' | sudo tee -a /etc/owfs.conf
 echo 'mountpoint = /mnt/1wire' | sudo tee -a /etc/owfs.conf
 sudo mkdir -p /mnt/1wire
-sudo chown -R pi:pi /mnt/1wire
+sudo chown -R matty:matty /mnt/1wire
 
 # Povolení I2C
 sudo raspi-config nonint do_i2c 0
