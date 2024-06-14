@@ -4,8 +4,8 @@
 sudo apt-get update
 sudo apt-get upgrade -y
 
-# Instalace Node.js (Node-RED vyžaduje Node.js 12.x nebo vyšší)
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+# Instalace Node.js (Node-RED vyžaduje Node.js 18.x nebo vyšší)
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # Instalace build-essential pro kompilaci nativních doplňků
