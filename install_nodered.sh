@@ -21,9 +21,8 @@ cd /home/matty/.node-red
 # Instalace příslušných knihoven
 npm install node-red-node-mysql
 npm install node-red-node-email
-npm install node-red-contrib-mcp23017
+npm install ncd-red-mcp23008
 npm install node-red-contrib-owfs
-npm install node-red-node-pi-gpio
 
 # Instalace OWFS
 sudo apt-get install -y owfs ow-shell owserver
