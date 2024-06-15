@@ -22,10 +22,13 @@ cd /home/matty/.node-red
 npm install ncd-red-ads1115
 npm install node-red-contrib-ds18b20-sensor
 npm install ncd-red-mcp23008
-npm install node-red-contrib-dht-sensor
+npm install --unsafe-perm -g node-dht-sensor
+npm install --unsafe-perm -g node-red-contrib-dht-sensor
 npm install --save node-red-contrib-email
 npm install --unsafe-perm node-red-contrib-ezo
-
+npm install node-red-contrib-owfs
+npm install node-red-node-mysql
+npm install node-red-node-pi-gpio
 
 # Instalace OWFS
 sudo apt-get install -y owfs ow-shell owserver
