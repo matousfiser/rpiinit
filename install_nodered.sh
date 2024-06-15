@@ -12,7 +12,7 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 
 # Instalace Node-RED
-sudo npm install -g --unsafe-perm node-red
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 
 # Vytvoření adresáře pro Node-RED
 mkdir -p /home/matty/.node-red
@@ -55,3 +55,6 @@ node-red-start
 sudo systemctl enable nodered.service
 
 echo "Node-RED a všechny příslušné knihovny byly nainstalovány, OWFS je nastaven a Node-RED je spuštěn. Můžete přistupovat k Node-RED na http://<vaše_ip>:1880/"
+
+# Ukončení skriptu
+exit 0
