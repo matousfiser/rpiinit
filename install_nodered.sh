@@ -19,10 +19,13 @@ mkdir -p /home/matty/.node-red
 cd /home/matty/.node-red
 
 # Instalace příslušných knihoven
-npm install node-red-node-mysql
-npm install node-red-node-email
+npm install ncd-red-ads1115
+npm install node-red-contrib-ds18b20-sensor
 npm install ncd-red-mcp23008
-npm install node-red-contrib-owfs
+npm install node-red-contrib-dht-sensor
+npm install --save node-red-contrib-email
+npm install --unsafe-perm node-red-contrib-ezo
+
 
 # Instalace OWFS
 sudo apt-get install -y owfs ow-shell owserver
